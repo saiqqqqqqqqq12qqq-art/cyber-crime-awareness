@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cyber Crime Awareness</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #080b12;
+            color: white;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #0d111c;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1px solid #273044;
+        }
+
+        nav h2 {
+            color: #00eaff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #00eaff;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background:
+                radial-gradient(circle at center, #12304a, #080b12 60%);
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            color: #00eaff;
+            text-shadow: 0 0 20px #00eaff;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 20px 0;
+            color: #c8d1dc;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 25px;
+            background: #00eaff;
+            color: #071018;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            box-shadow: 0 0 25px #00eaff;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #00eaff;
+            font-size: 35px;
+            margin-bottom: 35px;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+            color: #cbd5df;
+        }
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #111722;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #263244;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #00eaff;
+            box-shadow: 0 0 20px #003d4a;
+        }
+
+        .card h3 {
+            color: #00eaff;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #b9c4d0;
+            line-height: 1.6;
+        }
+
+        /* SAFETY */
+        .safety {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .safety li {
+            list-style: none;
+            background: #111722;
+            margin: 12px 0;
+            padding: 18px;
+            border-left: 4px solid #00eaff;
+            border-radius: 6px;
+        }
+
+        /* QUIZ */
+        .quiz {
+            max-width: 700px;
+            margin: auto;
+            background: #111722;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .quiz button {
+            padding: 12px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            background: #00eaff;
+            font-weight: bold;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #0d111c;
+            color: #8895a5;
+        }
+
+        @media(max-width:600px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <h2>CYBER⚡SAFE</h2>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#types">Threats</a>
+            <a href="#safety">Safety</a>
+            <a href="#quiz">Quiz</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div>
+            <h1>CYBER CRIME<br>AWARENESS</h1>
+
+            <p>
+                Stay Alert • Stay Safe • Stay Secure
+            </p>
+
+            <a href="#about" class="btn">
+                Explore Now
+            </a>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <h2>What is Cyber Crime?</h2>
+
+        <p class="about">
+            Cyber crime is illegal activity carried out using computers,
+            smartphones, networks or the internet. It can target people's
+            personal information, money, accounts or digital devices.
+        </p>
+
+    </section>
+
+    <!-- TYPES -->
+    <section id="types">
+
+        <h2>Common Cyber Crimes</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🎣 Phishing</h3>
+                <p>
+                    Fake messages or websites designed to trick people
+                    into giving away sensitive information.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>💳 Online Scams</h3>
+                <p>
+                    Fraudulent offers, fake payments and other tricks
+                    used to steal money or information.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🪪 Identity Theft</h3>
+                <p>
+                    Using another person's personal information
+                    without permission.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🦠 Malware</h3>
+                <p>
+                    Harmful software that can damage devices or
+                    compromise information.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>💬 Cyberbullying</h3>
+                <p>
+                    Harassment, threats or harmful behaviour
+                    through digital platforms.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🔓 Account Theft</h3>
+                <p>
+                    Unauthorized access to online accounts such as
+                    email or social media.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SAFETY -->
+    <section id="safety">
+
+        <h2>How To Stay Safe</h2>
+
+        <div class="safety">
+
+            <ul>
+                <li>🔐 Use strong and unique passwords.</li>
+                <li>📱 Enable Two-Factor Authentication (2FA).</li>
+                <li>🚫 Never share your OTP, PIN or password.</li>
+                <li>🔗 Check links before clicking them.</li>
+                <li>⬆️ Keep your phone and apps updated.</li>
+                <li>👀 Be careful with unknown messages and offers.</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz">
+
+        <h2>Cyber Safety Quiz</h2>
+
+        <div class="quiz">
+
+            <h3>
+                You receive a message asking for your OTP.
+                What should you do?
+            </h3>
+
+            <button onclick="wrong()">Share OTP</button>
+
+            <button onclick="correct()">Do NOT share it</button>
+
+            <p id="result"></p>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            🛡️ THINK BEFORE YOU CLICK
+        </p>
+
+        <p>
+            Cyber Crime Awareness Project • Class 11 IT
+        </p>
+
+    </footer>
+
+    <script>
+
+        function correct() {
+            document.getElementById("result").innerHTML =
+                "✅ Correct! Never share your OTP with anyone.";
+            document.getElementById("result").style.color = "#00ff88";
+        }
+
+        function wrong() {
+            document.getElementById("result").innerHTML =
+                "❌ Wrong! OTP should always be kept private.";
+            document.getElementById("result").style.color = "#ff5555";
+        }
+
+    </script>
+
+</body>
+</html>
